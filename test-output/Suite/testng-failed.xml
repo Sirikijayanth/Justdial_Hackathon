@@ -12,13 +12,6 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.CarWashingServices">
-        <methods>
-          <include name="quit"/>
-          <include name="driversetup"/>
-          <include name="display_services_numbers"/>
-        </methods>
-      </class> <!-- testCases.CarWashingServices -->
       <class name="testCases.Gym">
         <methods>
           <include name="gym"/>
@@ -26,6 +19,13 @@
           <include name="driversetup"/>
         </methods>
       </class> <!-- testCases.Gym -->
+      <class name="testCases.CarWashingServices">
+        <methods>
+          <include name="quit"/>
+          <include name="driversetup"/>
+          <include name="display_services_numbers"/>
+        </methods>
+      </class> <!-- testCases.CarWashingServices -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

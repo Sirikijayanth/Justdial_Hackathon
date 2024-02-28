@@ -14,7 +14,6 @@ public class Gym extends BaseClass {
 	@Test(groups= {"regression","master"})
 	public void gym() throws InterruptedException, IOException {
 		GymPage gp=new GymPage(driver);
-		try {
 			gp.navigate_back();
 			BaseClass.screenshot("Back_to_hp");
 			gp.gym();
@@ -26,11 +25,7 @@ public class Gym extends BaseClass {
 				Excel.setCellData("Sub-menu",0,0,"SUB_MENU ITEMS");
 				Excel.setCellData("Sub-menu",i+1,0,gp.sub_menu().get(i));
 			}
-		}
-		catch(Exception e) {
-			logger.error("***test cases failed***");
-			Assert.fail();
-		}
+		
 	}
 	
 }

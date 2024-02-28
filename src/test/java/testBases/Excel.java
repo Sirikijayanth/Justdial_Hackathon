@@ -16,7 +16,7 @@ public class Excel {
 	public static XSSFSheet ws;
 	public static XSSFRow row;
 	public static XSSFCell cell;
-	static String file="C:\\Users\\2304081\\eclipse-workspace\\Hackathon_Project\\src\\test\\java\\testBases\\Excel.java";
+	static String file="C:\\Users\\2304081\\eclipse-workspace\\Hackathon_Project\\test-data\\Book1.xlsx";
 	public static void setCellData(String sheet,int r,int c,String text) throws IOException {
 		fi=new FileInputStream(file);
 		wb=new XSSFWorkbook(fi);
